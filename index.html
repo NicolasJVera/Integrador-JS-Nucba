@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Star | Alternative | Anime Clothing Store</title>
+
+    <!--FAV ICON-->
+    <link rel="shortcut icon" href="./src/assets/icons/logo.svg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/mediaqueries.css" />
+    <link rel="stylesheet" href="./src/styles/animaciones.css" />
+    <!-- AGREGAMOS CDN DE FONT-AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header-container main-header-scrolled">
+      <div>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="./src/assets/icons/logo.svg"
+            alt="Logotipo de la pagina"
+          />
+        </a>
+      </div>
+
+      <nav class="nav-menu">
+        <div class="menu-label">
+          <img src="./src/assets/icons/menu.svg" alt="" class="menu-icon" />
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="#products">Colection</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
+          <li><a href="#filtros">Categories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Carrito de Compras -->
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping">
+            <div class="cart-bubble">0</div>
+          </i>
+
+          <div class="cart">
+            <h2>Tus Productos</h2>
+
+            <div class="cart-container">
+              <!-- Aquí se renderizarán los productos del carrito -->
+            </div>
+
+            <span class="divider"></span>
+
+            <div class="cart-total">
+              <p>Total:</p>
+              <span class="total">0.00</span>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+          </div>
+        </div>
+        <div class="modal hidden">
+          <div class="modal-content">
+            <p>¡Producto agregado al carrito!</p>
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Black Star | Alternative | Anime Clothing Store</h1>
+          <p>Moda alternativa y goth que expresa lo profundo y auténtico.</p>
+          <a href="#aboutUs" class="btn">Conócenos</a>
+        </div>
+      </section>
+
+      <section id="aboutUs" class="expression-section">
+        <div class="text-content">
+          <h4>About Us</h4>
+          <h1>Vístete con tu verdadera identidad emocional</h1>
+          <p>
+            Nuestra marca celebra la diversidad y la autoexpresión. Ofrecemos
+            ropa que refleja tu individualidad y estilo único.
+          </p>
+
+          <div class="buttons-container">
+            <a href="#filtros">
+              <button>Colección</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img src="./src/assets/icons/star.gif" alt="About Us Imagen" />
+        </div>
+      </section>
+
+      <section>
+        <div class="benefits">
+          <h2>¿Porqué Comprar con nosotros?</h2>
+          <div class="benefit">
+            <img src="./src/assets/icons/envios.webp" alt="Envío Gratis" />
+            <div>
+              <h4>ENVÍO GRATIS</h4>
+              <p>Entregas a todo el país</p>
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="benefit">
+            <img src="./src/assets/icons/pagos.webp" alt="Pagá como quieras" />
+            <div>
+              <h4>PAGÁ COMO QUIERAS</h4>
+              <p>Tarjetas de crédito o efectivo</p>
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="benefit">
+            <img src="./src/assets/icons/seguridad.webp" alt="Compra segura" />
+            <div>
+              <h4>COMPRÁ CON SEGURIDAD</h4>
+              <p>Tus datos siempre protegidos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filtros con efectos al pasar el mouse -->
+      <section class="filtros" id="filtros">
+        <h2>Categorías</h2>
+        <div class="categorias">
+          <div class="categoria all-products" data-category="all">
+            <img src="./src/assets/icons/logo.svg" alt="all products" />
+            <p>All Products</p>
+          </div>
+          <div class="categoria" data-category="band-merch">
+            <img
+              src="./src/assets/band-merch/deftones.webp"
+              alt="Bands Merch"
+            />
+            <p>Bands Merch</p>
+          </div>
+          <div class="categoria" data-category="anime-merch">
+            <img
+              src="./src/assets/anime-merch/luffy-onepiece.webp"
+              alt="Anime Merch"
+            />
+            <p>Anime Merch</p>
+          </div>
+          <div class="categoria" data-category="Hoddies">
+            <img src="./src/assets/hoddies/hoddie-araña.webp" alt="Hoddies" />
+            <p>Hoodies</p>
+          </div>
+          <div class="categoria" data-category="Jeans">
+            <img src="./src/assets/jeans/jean-stars.webp" alt="Jeans" />
+            <p>Jeans</p>
+          </div>
+          <div class="categoria" data-category="Bags">
+            <img src="./src/assets/bags/korn.webp" alt="Bags" />
+            <p>Bags</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lista de Productos  -->
+      <section class="productos" id="products">
+        <h2>Productos</h2>
+        <div class="lista-productos" id="lista-productos">
+          <!-- Aquí se renderizan los productos con JS -->
+        </div>
+        <button class="btn-products">Ver Más</button>
+      </section>
+
+      <!-- Sección de Contacto -->
+      <section class="contacto" id="contact">
+        <h2>Contáctanos</h2>
+        <form class="form-contacto" id="formContacto">
+          <input
+            id="nombre"
+            type="text"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+          <div id="error-nombre" class="error-msg hidden"></div>
+
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Tu correo"
+            required
+          />
+          <div id="error-email" class="error-msg hidden"></div>
+
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Tu mensaje"
+            required
+          ></textarea>
+          <div id="error-mensaje" class="error-msg hidden"></div>
+
+          <div id="error-general" class="error-msg hidden"></div>
+          <div id="exito-msg" class="success-msg hidden"></div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Sobre Nosotros</h3>
+          <p>
+            Somos una tienda especializada moda alternativa y goth que expresa
+            lo profundo y auténtico.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#aboutUs">Sobre Nosotros</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#filtros">Categorías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Políticas</h3>
+          <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Política de Reembolso</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Síguenos</h3>
+          <ul class="social-media">
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-facebook fa-2xl"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-instagram fa-2xl"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-tiktok fa-2xl"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Blak Star. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="./src/data/data.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+    <script type="module" src="./src/components/formulario.js"></script>
+  </body>
+</html>

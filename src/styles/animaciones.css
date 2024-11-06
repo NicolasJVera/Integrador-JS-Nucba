@@ -1,0 +1,88 @@
+/* Animaciones */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 147px;
+}
+
+/* Animación de fade-in para las secciones al hacer scroll */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto de aparición con animación */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  /* Agregamos un poco de retraso para que las secciones aparezcan con tiempos diferentes */
+  animation-delay: 0.3s;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /*Para que quede por encima del resto de las cosas*/
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.overlay.visible {
+  display: block;
+}
+
+/* Efecto de Blur en las categorias con aparicion de letras */
+
+.categoria:hover img {
+  filter: blur(4px);
+}
+
+.categoria p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.categoria:hover p {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.active {
+  border: 3px solid var(--light);
+  background-color: var(--white);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Modal Animacion */
+.modal.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}

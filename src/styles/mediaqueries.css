@@ -1,0 +1,217 @@
+/* PC */
+@media (max-width: 1024px) {
+  .categoria {
+    width: 130px;
+  }
+}
+
+/* PC - Notebook */
+@media (max-width: 992px) {
+
+  /* Header */
+  .nav-menu {
+    gap: 25px;
+  }
+
+  .cart-icon {
+    border: 0px solid;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 130px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-color: var(--black);
+    border: 2px solid var(--primary);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: center;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list a {
+    font-size: 18px;
+  }
+
+  /* Mostramos el icono del menu */
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  .open-menu {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-content {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Sobre Nosotros */
+  .expression-section {
+    flex-direction: column;
+  }
+
+  .buttons-container {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .buttons-container button {
+    background: var(--light);
+  }
+
+  .image-content img {
+    width: 100%;
+  }
+
+  /* Categorias */
+  .filtros h2 {
+    font-size: 1.5rem;
+  }
+
+  .categorias {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categoria {
+    width: 320px;
+  }
+
+  /* Contacto */
+  .contacto h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-column {
+    text-align: center;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .benefits {
+    flex-direction: column;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .benefit {
+    margin-bottom: 20px;
+  }
+}
+
+/* Celu */
+@media (max-width: 576px) {
+  /* Hero */
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* About Us */
+  .expression-section {
+    margin: 20px 20px;
+  }
+  .text-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .image-content {
+    display: none;
+  }
+
+  /* Filtros */
+  .filtros {
+    margin: 20px 20px;
+  }
+
+  /* Productos */
+  .productos {
+    margin: 0 20px;
+  }
+
+  .productos h2 {
+    font-size: 2rem;
+  }
+
+  /* Contacto */
+  .contacto {
+    margin: 20px 20px;
+  }
+
+  /* Modificar el carrito para celu */
+  .cart {
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .producto {
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+
+  .producto img {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .btn-agregar {
+    width: 150px;
+    font-size: 15px;
+  }
+}
